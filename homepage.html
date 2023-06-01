@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script>
+        function user(){
+            let a=document.getElementById("link").value;
+            if (a=="STUDENT"){
+                window.location.href="./student login.html";
+            }
+        }
+        function users(){
+            let b=document.getElementById("aa").value;
+            if (b=="TRAINER"){
+                window.location.href="./Trainer login.html";
+            }
+        }
+    </script>
+    <style>
+        #he{
+            color:white;
+            font-style: italic;
+            border:8px rgb(18, 18, 63) solid;
+            background-color: rgb(22, 22, 61);
+            text-align: center;
+        }
+        #new{
+            background-color: rgb(199, 235, 247);
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+        }
+
+        #extra{
+            border:9px  rgb(235, 235, 235) solid;
+            background-color: rgb(235, 235, 235);
+            padding-bottom: 50px;
+            margin-top: 30px;
+        }
+        #one{
+            margin-left: 350px;
+        }
+        #two{
+            margin-left: 50px;
+        }
+        #three{
+            margin-left: 50px;
+        }
+        #four{
+            margin-left: 50px;
+        }
+        #T{
+            font-size: 30px;
+            margin-left: 500px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #box{
+            border: 3px rgb(100, 19, 40) solid;
+            padding-bottom: 60px;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-right: 800px;
+            margin-left:150px; 
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        #link{
+            background-color: blue;
+            color:white;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 3px blue solid;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        #link:hover{
+            border: 5px rgb(20, 20, 223) solid;
+        
+        }
+
+        #aa{
+            background-color: blue;
+            color:white;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 3px blue solid;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        #aa:hover{
+            border: 5px rgb(20, 20, 223) solid;
+        
+        }
+        #size{
+            width:480px;
+            height:480px;
+            border: 3px white solid;
+            margin-right: 50px;
+        }
+
+        h6{
+            color: #1f1f1f;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-family: "Source Sans Pro",Arial,sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.1px;
+            margin-right: 100px;
+            text-align:justify;
+            margin-left: 40px;
+            
+        
+        
+        }
+        h2{
+            font-family: "Source Sans Pro",Arial,sans-serif;
+            font-weight:500;
+            letter-spacing: -0.2px;
+            font-size: 4rem;
+            line-height: 4.5rem;
+            margin-right: 155px;
+            
+
+        }
+        #align{
+            border: 3px white solid;
+        }
+        #p{
+            border:5px white solid;
+            margin-right: 10px;
+            
+        }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <!---------------------start design---------------------->
+    <h1 id="he"><strong>EDUSPOT
+        
+    </strong></h1>
+    <p id="new"><strong>Register today for the Top Job Skills for 2023 Webinar on feb 26. Save my spot.
+    </strong></p>
+
+    <!---------------------allignment------------------------->
+    <div id="align">
+        
+        <table cellpadding="">
+            <tr>
+                <th>
+                    <div id="p">
+                    <h2>Learn without limits </h2>
+                    <h6>Start, switch, or advance your career with 
+                        more than 5,000 courses, Professional Certificates,  
+                        and degrees from world-class universities and companies.
+                    </h6>
+                    </div</th>
+
+<!---------------------------------------image insert-------->
+                    <th>
+                        <img src="./align.png" alt="" id="size">
+                    </th>
+            </tr>
+        </table>
+
+        
+            <div id="box">
+                <h1>Login here</h1>
+                <input type="button" value="STUDENT" id="link" onclick="user()"><br>
+                <br>
+                <input type="button" value="TRAINER" id="aa" onclick="users()">
+            </div>
+            
+
+    </div>
+
+    <!-------------------last design----------------------------->
+
+    <div id="extra">
+        <p id="T">We collaborate with</p>
+        <img id="one"  src="./1.png" >
+        <img id="two"  src="./2.png" >
+        <img id="three" src="./4.png">
+        <img id="four"  src="./5.png">
+        
+
+
+    </div>
+
+    
+    
+</body>
+</html>

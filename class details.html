@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Details</title>
+    <script>
+        function user(){
+            let name=document.getElementById("p").value;
+            let demo=document.getElementById("r").value;
+            if (name=="python" && demo=="python"){
+                window.location.href="./PYTHON.html";
+            }else if (name=="sql" && demo=="sql"){
+                window.location.href="./SQL.html";
+            }else if (name=="java" && demo=="java"){
+                window.location.href="./WEBTECH.html"
+            }else {
+                alert ("choose valid option")
+            }
+        }
+    </script>
+    <style>
+        #full{
+            border:3px gray solid;
+            margin-left: 200px;
+            margin-right: 650px;
+            padding-bottom: 30px;
+            margin-top: 100px;
+            background-image: url(./ba.jpg);
+            background-size: cover;
+            color: black;
+        }
+
+        body{
+            background-image: url(./tea.jpg);
+            background-size: cover;
+        }
+
+        #he{
+            color:white;
+            font-style: italic;
+            border:8px rgb(18, 18, 63) solid;
+            background-color: rgb(22, 22, 61);
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+            color: rgba(19, 4, 238, 0.822);
+        }
+        
+        #color{
+            background-color: blue;
+            border: 3px blue solid;
+            color:white;
+            font-size: 15px;
+            padding-left: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 15px;
+        }
+        #color:hover{
+            border: 5px rgb(43, 43, 231) solid;
+        }
+
+        #p{
+            padding-right: 80px;
+            padding-bottom: 5px;
+            padding-top:5px;
+        }
+        #r{
+            padding-right: 80px;
+            padding-bottom: 5px;
+            padding-top:5px;
+        }
+        th{
+            color: rgb(173, 5, 27);
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1 id="he"><strong>EDUSPOT</strong></h1>
+
+
+    <div id="full">
+    <table cellpadding="15">
+        <h2>SELECT CLASS</h2>
+        <tr>
+            <th>BATCH CODE:</th>
+            <td> 
+                <select id="r">
+                
+                    <option>-select-</option>
+                    <option value="python">34YM3</option>
+                    <option value="sql">3CDM17</option>
+                    <option value="java">3CWE1</option>
+                </opt>
+            </select></td>
+        </tr>
+
+        <tr>
+            <th>CLASS:</th>
+            <td>
+                <select id="p">
+                    <option>-select-</option>
+                    <option value="python">PYTHON</option>
+                    <option value="sql">SQL</option>
+                    <option value="java">JAVA</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th><input type="button" value="Go To Class" id="color" onclick="user()"></th>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
